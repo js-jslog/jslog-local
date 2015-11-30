@@ -1,0 +1,13 @@
+.form-control {
+	width: 100px;
+	display: inline;
+	float : right;
+}
+form {
+	background-color : #dddddd;
+	padding : 10px 20px 10px 10px;
+}
+form .form-group > input {
+	width : 100px;
+	float : right;
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 6720 650">
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2015 Joseph SInfield <joseph.sinfield@jslog.co.uk>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+  <rect class="background" x="0" y="0" width="720" height="650" style="fill:#fff;" />
+  <path class="mainBlockFill"
+        d="m60,40 
+          l120,0 
+          q90,0 90,-30 
+          l90, 0 
+          q0,30 90,30 
+          l6210,0 
+          a50,50 0 0,1 50,50 
+          l0,500 
+          a50,50 0 0,0 -50,50 
+          l-6600,0 
+          a50,50 0 0,1 -50,-50 
+          l0,-500 
+          a50,50 0 0,1 50,-50"
+        style="fill:#525252; stroke:none;" />
+  <path class="mossFill"
+        d="m360,10 
+          q0,30 90,30 
+          l6210,0 
+          a50,50 0 0,1 50,50 
+          l-6285,0 
+          a60,60 0 0,1 -60,-60
+          z"
+        style="fill:#66ac7d; stroke:none;" />
+  <path class="mainBlockOutline"
+        d="m60,40 
+          l120,0 
+          q90,0 90,-30 
+          l90, 0 
+          q0,30 90,30 
+          l6210,0 
+          a50,50 0 0,1 50,50 
+          l0,500 
+          a50,50 0 0,0 -50,50 
+          l-6600,0 
+          a50,50 0 0,1 -50,-50 
+          l0,-500 
+          a50,50 0 0,1 50,-50"
+        style="fill:none; stroke:#525252; stroke-width:10px" />
+</svg>

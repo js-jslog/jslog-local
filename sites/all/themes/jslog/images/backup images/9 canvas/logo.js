@@ -1,0 +1,177 @@
+var drawFirst = function (ctx, stroke, fill) {
+		ctx.save();
+		ctx.fillStyle = fill;
+		ctx.strokeStyle = stroke;
+
+		ctx.beginPath();
+
+		ctx.moveTo(60,40);
+		ctx.lineTo(110,40);
+		ctx.quadraticCurveTo(200,40,200,10);
+		ctx.lineTo(290,10);
+		ctx.quadraticCurveTo(290,40,380,40);
+		ctx.lineTo(660,40);
+		ctx.translate(660,90);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,-1.5707963267948966,0,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-660,-90);
+		ctx.lineTo(710,590);
+		ctx.translate(710,640);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,-1.5707963267948966,-3.141592653589793,1);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-710,-640);
+		ctx.lineTo(60,640);
+		ctx.translate(60,590);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,1.5707963267948966,3.141592653589793,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-60,-590);
+		ctx.lineTo(10,90);
+		ctx.translate(60,90);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,3.141592653589793,4.71238898038469,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-60,-90);
+
+		ctx.fill();
+		ctx.stroke();
+}
+
+var drawLogo = function (ctx) {
+
+		drawFirst(ctx, "rgba(0, 0, 0, 0)", "#525252");
+
+		ctx.restore();
+		ctx.save();
+		ctx.fillStyle = "#66ac7d";
+		ctx.strokeStyle = "rgba(0, 0, 0, 0)";
+
+		ctx.beginPath();
+
+		ctx.moveTo(290,10);
+		ctx.quadraticCurveTo(290,40,380,40);
+		ctx.lineTo(660,40);
+		ctx.translate(660,90);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,-1.5707963267948966,0,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-660,-90);
+		ctx.lineTo(355,90);
+		ctx.translate(355,30);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,60,1.5707963267948966,3.141592653589793,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-355,-30);
+
+		ctx.closePath();
+		ctx.fill();
+		ctx.stroke();
+
+		ctx.restore();
+		ctx.save();
+		ctx.fillStyle = "rgba(0, 0, 0, 0)";
+		ctx.strokeStyle = "#525252";
+		ctx.lineWidth = 10;
+
+		ctx.beginPath();
+
+		ctx.moveTo(60,40);
+		ctx.lineTo(110,40);
+		ctx.quadraticCurveTo(200,40,200,10);
+		ctx.lineTo(290,10);
+		ctx.quadraticCurveTo(290,40,380,40);
+		ctx.lineTo(660,40);
+		ctx.translate(660,90);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,-1.5707963267948966,0,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-660,-90);
+		ctx.lineTo(710,590);
+		ctx.translate(710,640);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,-1.5707963267948966,-3.141592653589793,1);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-710,-640);
+		ctx.lineTo(60,640);
+		ctx.translate(60,590);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,1.5707963267948966,3.141592653589793,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-60,-590);
+		ctx.lineTo(10,90);
+		ctx.translate(60,90);
+		ctx.rotate(0);
+		ctx.scale(1,1);
+		ctx.arc(0,0,50,3.141592653589793,4.71238898038469,0);
+		ctx.scale(1,1);
+		ctx.rotate(0);
+		ctx.translate(-60,-90);
+		ctx.fill();
+		ctx.stroke();
+		ctx.restore();
+		ctx.save();
+		ctx.strokeStyle = 'rgba(0,0,0,0)';
+		ctx.lineCap = 'butt';
+		ctx.lineJoin = 'miter';
+		ctx.miterLimit = 4;
+		ctx.save();
+		ctx.fillStyle = "#ffffff";
+		ctx.beginPath();
+		ctx.moveTo(165.65,526.47375);
+		ctx.lineTo(213.8625,497.29625);
+		ctx.bezierCurveTo(223.16375,513.7875,231.625,527.74,251.92,527.74);
+		ctx.bezierCurveTo(271.37375,527.74,283.63874999999996,520.13025,283.63874999999996,490.53000000000003);
+		ctx.lineTo(283.63874999999996,289.23);
+		ctx.lineTo(342.8425,289.23);
+		ctx.lineTo(342.8425,491.3675);
+		ctx.bezierCurveTo(342.8425,552.6875,306.89874999999995,580.59875,254.45749999999998,580.59875);
+		ctx.bezierCurveTo(207.09625,580.59875,179.60499999999996,556.07,165.64999999999998,526.46875);
+		ctx.fill();
+		ctx.stroke();
+		ctx.restore();
+		ctx.save();
+		ctx.fillStyle = "#ffffff";
+		ctx.beginPath();
+		ctx.moveTo(375,520.13);
+		ctx.lineTo(423.20625,492.21875);
+		ctx.bezierCurveTo(435.89625,512.9425,452.38875,528.16625,481.5675,528.16625);
+		ctx.bezierCurveTo(506.09875,528.16625,521.74125,515.9014999999999,521.74125,498.985);
+		ctx.bezierCurveTo(521.74125,478.68625000000003,505.6725,471.49625000000003,478.60625000000005,459.65875);
+		ctx.lineTo(463.80875000000003,453.31125);
+		ctx.bezierCurveTo(421.09375,435.13,392.75875,412.29375,392.75875,364.08374999999995);
+		ctx.bezierCurveTo(392.75875,319.67999999999995,426.59000000000003,285.84624999999994,479.45375,285.84624999999994);
+		ctx.bezierCurveTo(517.0912500000001,285.84624999999994,544.15625,298.9574999999999,563.6075000000001,333.2124999999999);
+		ctx.lineTo(517.51125,362.8137499999999);
+		ctx.bezierCurveTo(507.36125000000004,344.6312499999999,496.36875000000003,337.44249999999994,479.45375,337.44249999999994);
+		ctx.bezierCurveTo(462.115,337.44249999999994,451.11875000000003,348.43749999999994,451.11875000000003,362.8137499999999);
+		ctx.bezierCurveTo(451.11875000000003,380.5762499999999,462.115,387.7662499999999,487.48625000000004,398.76249999999993);
+		ctx.lineTo(502.28625000000005,405.1049999999999);
+		ctx.bezierCurveTo(552.61125,426.6737499999999,580.9462500000001,448.6624999999999,580.9462500000001,498.1387499999999);
+		ctx.bezierCurveTo(580.9462500000001,551.4262499999999,539.08,580.6037499999999,482.83625000000006,580.6037499999999);
+		ctx.bezierCurveTo(427.86000000000007,580.6037499999999,392.33625000000006,554.3862499999999,375.00000000000006,520.1299999999999);
+		ctx.fill();
+		ctx.stroke();
+		ctx.restore();
+		ctx.restore();
+		ctx.restore();
+	}

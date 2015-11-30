@@ -1,0 +1,152 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'customVariables.less';
+@import 'mediaQueries.less';
+
+/* universal settings */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+	font-family : "medium-content-serif-font",Georgia,Cambria,"Times New Roman",Times,serif;
+	color : @brand-mocca;
+	font-size : 1.6em;
+	line-height : 2.5em;
+}
+h3, h4 {
+	text-decoration : underline;
+}
+h1, h2, h3, h4, h5 {
+	margin-top: 2em;
+}
+p {
+	margin : 1em 0;
+}
+a {
+	color : lighten(@brand-blue, 25%);
+}
+code {
+	color: @brand-dark;
+	font-family: Courier New, Courier, monospace;
+}
+.emphasise {
+	font-size: 1.2em;
+	font-style: italic;
+	color: tint(@brand-mocca, 35%);
+}
+
+
+
+/* mainBody stuff */
+.page-header {
+	border-color: @brand-burnt-orange;
+}
+@media @tablet{
+	.main-container{
+		margin-top : 4em;
+		padding-left : 75px;
+		padding-right : 75px;
+	}
+}
+@media @normal{
+	.main-container{
+		padding-left : 100px;
+		padding-right : 100px;
+	}
+}
+
+
+/* figure stuff */
+figure {
+	margin-bottom: 2em;
+}
+figure img{
+	display: block;
+    margin: auto;
+}
+figure figcaption{
+	font-size: 0.8em;
+    text-align: center;
+    margin: auto;
+	line-height: 1.75em;
+}
+@media @smalltab {
+	figure figcaption{
+		width: 75%;
+	}
+}
+
+/* image stuff */
+img.scale-wide {
+	width: 90%;
+	height: auto;
+}
+img.scale-square {
+	width: 60%;
+	height: auto;
+}
+img.scale-tall {
+	width: 40%;
+	height: auto;
+}
+@media @tablet{
+	img.scale-wide{
+		width: 60%;
+	}
+	img.scale-square{
+		width: 40%;
+	}
+	img.scale-tall{
+		width: 30%;
+	}
+}
+@media @normal{
+	img.scale-wide{
+		width: 50%;
+	}
+	img.scale-square{
+		width: 30%;
+	}
+	img.scale-tall{
+		width: 20%;
+	}
+}
+
+
+/* code block stuff ----- should this go in a customised prism bit???*/
+/*pre output:before{
+    content: "> ";
+}
+pre output{
+	padding:7px;
+	border-left: @output-bar 4px solid;
+}*/
+.panel.panel-code pre {
+	margin: 0;
+	border: 0;
+	border-radius: 0 0 @border-radius-base @border-radius-base;
+}
+.panel-code .panel-heading{
+	background-color: @brand-dark;
+	color: @brand-green;
+}
+.panel-code output{
+	padding:7px;
+	border-left: @output-bar 4px solid;
+}
+.panel-code {
+	border: 0;
+	margin-bottom: 0.5em;
+}
+
+
+
+
+/* tables */
+th {
+	background-color : @brand-green;
+}
+td[colspan]:not([colspan="1"]), th[colspan]:not([colspan="1"]) {
+	text-align: center;
+}

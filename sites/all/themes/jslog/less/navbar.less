@@ -1,0 +1,64 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'customVariables.less';
+@import 'mediaQueries.less';
+
+.navbar-logo {
+	margin-top: -11px;
+	height: 39px;
+}
+.nav-band {
+	background-color: #eee;
+	border-top: 3px solid @brand-green;
+}
+nav.mainnav.navbar.container {
+	margin-top: -11px;
+	border: none;
+	color: @brand-mocca;
+}
+nav.mainnav.navbar .container {}
+@media @tablet{
+	.navbar-brand {
+		display: none;
+	}
+	nav.mainnav.navbar.container {
+		background-color : transparent;
+		border-color : transparent;
+		margin-top: 0;
+		border-radius: 0;
+	}
+	.navbar-nav li {
+		padding: 0 15px;
+	}
+	.navbar-nav li.first {
+		padding-left: 0;
+	}
+	.navbar-nav li.last {
+		padding-right: 0;
+	}
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: @brand-dark;
+	background-color: inherit;
+}
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
+	color: @brand-burnt-orange;
+	background-color: inherit;
+}
+
+.navbar .container {
+	border : none;
+	padding-top : 0.5em;
+	font-size : 1.25em;
+	font-weight : bold;
+}
+
+/* mobile nav collapse */
+.navbar-header {
+	background-color : @brand-choc;
+	border-color : @brand-burnt-orange;
+	margin: 0;
+}

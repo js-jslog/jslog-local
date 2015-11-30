@@ -1,0 +1,94 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'customVariables.less';
+@import 'mediaQueries.less';
+
+.page-header {
+	text-align: center;
+	display: none;
+}
+
+h2 {
+	margin-top: 0em;
+	text-align: right;
+	font-size: 1.5em;
+	float: right;
+}
+.home-blurb {
+	color: tint(@brand-mocca, 50%);
+	float: left;
+	font-size: 0.6em;
+	line-height: 2em;
+	height: 11em;
+	clear: both;
+}
+.home-blurb small {
+	margin-left: 1em;
+}
+.home-blurb>span {
+	position: absolute;
+	display: none;
+}
+.home-blurb .chris1 {
+	display: block;
+}
+.home-content {
+	border-top: 1px solid @brand-burnt-orange;
+	font-size: 1.5em;
+	clear: both;
+}
+@media @normalmob {
+	h2 {
+		font-size: 2em;
+	}
+	.home-blurb {
+		height: 8em;
+	}
+}
+@media @smalltab {
+	h2 {
+		font-size: 3em;
+	}
+	.home-blurb {
+		margin-top: -4em;
+		font-size: 0.6em;
+		height: 9em;
+	}
+	.home-blurb>span {
+		width: 55%;
+	}
+}
+@media @tablet {
+	h2 {
+		font-size: 3em;
+	}
+	.home-blurb {
+		margin-top: -3em;
+		font-size: 0.75em;
+	}
+	.home-blurb>span {
+		width: 60%;
+	}
+}
+@media @normal {
+	h2 {
+		font-size: 3em;
+	}
+	.home-blurb {
+		margin-top: -3em;
+		font-size: 0.75em;
+	}
+	.home-content {
+		padding-top: 2em;
+	}
+}
+
+@media @wide {
+	h2 {
+		font-size: 4em;
+	}
+	.home-blurb {
+		margin-top: -9em;
+		font-size: 0.75em;
+	}
+}

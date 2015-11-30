@@ -1,0 +1,62 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'customVariables.less';
+@import 'mediaQueries.less';
+
+h2.title a {
+	color: @brand-dark;
+}
+h2.title a:hover {
+	text-decoration: none;
+}
+h2.title a::after {
+	font-size: 0.5em;
+	content: " click for complete list";
+}
+h2.title a:hover::after{
+	color: @brand-burnt-orange;
+}
+
+
+@media @smalltab {
+	.view {
+	    width: 75%;
+	    margin: auto;
+	}
+}
+
+@media @tablet {
+	.view {
+		width: 50%;
+	}
+	.view .text-center {
+		text-align: left;
+	}
+
+	.view-articles-overview-javascript {
+		float: left;
+	}
+
+	.view-articles-overview-resource {
+		float: right;
+	}
+
+	.view-articles-overview-drupal {
+		float: left;
+	}
+}
+
+.pagination li a, .pagination li a:hover {
+	background-color: #eee;
+	border-color: #aaa;
+	color: @brand-mocca;
+}
+.pagination li.active span, .pagination li.active span:hover, .pagination li.active a, .pagination li.active a:hover {
+	background-color: @brand-green;
+	border-color: @brand-mocca;
+	color: @brand-mocca;
+}
+.pagination li a:hover {
+	border-color: @brand-mocca;
+	color: @brand-burnt-orange;
+}

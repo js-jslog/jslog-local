@@ -1,0 +1,86 @@
+// Bootstrap variables.
+@import 'variables.less';
+@import 'customVariables.less';
+@import 'mediaQueries.less';
+
+
+.banner {
+    display: block;
+    position: relative;
+	padding: 0;
+	width: 100%;
+	background-color: @brand-choc;
+	margin: 0;
+}
+.banner-image {
+	display: block;
+	width : 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.header-content {
+	width: 400px;
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	font-size: 0.6em;
+	max-width: 300px;
+	display: none;
+}
+
+.login-container {
+	position: absolute;
+	bottom: 10px;
+	right: 17px;
+	font-size: 1em;
+}
+.login-container .login-text {
+	display: none;
+}
+.login-container a {
+	color: @brand-mocca;
+}
+.login-container a:hover {
+	color: @brand-green;
+	text-decoration: none;
+}
+@media @smalltab {
+	.login-container {
+		font-size: 0.75em;
+		bottom: 15px;
+	}
+	.login-container .login-text {
+		display: inline;
+	}
+}
+@media @tablet {
+	.login-container {
+		font-size: 1em;
+		bottom: 20px;
+	}
+}
+@media @normal {
+	.login-container {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}
+
+.header-logo-container {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+.header-logo {
+	height: 50px;
+	display: none;
+}
+
+@media @tablet {
+	.header-logo {
+		display: block;
+	}
+}
+
